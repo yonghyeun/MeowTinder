@@ -76,7 +76,6 @@ export default class Cards {
     this.current.removeEventListener('pointerdown', setupCard);
     this.current.removeEventListener('pointermove', moveCard);
     this.current.removeEventListener('pointerup', terminateEvent);
-    this.current.removeEventListener('pointerleave', terminateEvent);
   };
 
   terminateEvent = () => {
@@ -91,7 +90,6 @@ export default class Cards {
     const { moveCard, terminateEvent } = this;
     this.current.addEventListener('pointermove', moveCard);
     this.current.addEventListener('pointerup', terminateEvent);
-    this.current.addEventListener('pointerleave', terminateEvent);
   };
 
   setupCard = (event) => {
