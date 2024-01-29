@@ -1,4 +1,4 @@
-<img src = 'https://velog.velcdn.com/images/yonghyeun/post/2b3fb81a-e5c0-497d-bf51-a9c46afe4374/image.gif' alt = 'result'>
+<img src = './result.gif' alt = 'result'>
 
 > <a href = 'https://www.youtube.com/watch?v=O0rgN2H9pEY'>자바스크립트로 소개팅앱 스타일 카드 스와이프 마스터하기</a>
 > 해당 영상을 한 번 슥~ 본 후에 내 스타일대로 다시 만들어보는 토이프로젝트
