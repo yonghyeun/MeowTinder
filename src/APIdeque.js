@@ -36,6 +36,15 @@ export default class APIdeque extends deque {
         return responseArr.map((item) => new InfoNode(item[0]));
       })
       .then(appendLeftNode)
-      .then(render);
+      .then(render)
+      .catch((e) => {
+        /* 너무 자주 요청을 보내 error 상태코드가 뜨면 
+        3초후 다시 요청을 보내도록 함 
+        */
+        console.error(e);
+        setTimeout(() => {
+          this.fetchImg();
+        }, 3000);
+      });
   }
 }
